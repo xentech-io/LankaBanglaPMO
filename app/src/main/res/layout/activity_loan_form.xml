@@ -1,0 +1,305 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="20dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Submit Below Form"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:padding="5dp"
+                android:text="Customer Information:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/client_name"
+                android:singleLine="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_input_bg"
+                android:gravity="center_vertical"
+                android:hint="Applican's Name"
+                android:inputType="textPersonName"
+                android:layout_marginTop="10dp"
+                android:padding="14dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/medium_grey"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/co_client_name"
+                android:singleLine="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/form_input_bg"
+                android:gravity="center_vertical"
+                android:hint="Co Applican's Name"
+                android:inputType="textPersonName"
+                android:padding="14dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/medium_grey"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/birth_day_input"
+                android:singleLine="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/form_input_bg"
+                android:gravity="center_vertical"
+                android:hint="Date of Birth"
+                android:drawableRight="@drawable/ic_date"
+                android:drawableEnd="@drawable/ic_date"
+                android:drawablePadding="8dp"
+                android:inputType="date"
+                android:padding="14dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/medium_grey"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/client_phone_no"
+                android:singleLine="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/form_input_bg"
+                android:gravity="center_vertical"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:padding="14dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/medium_grey"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/client_designation"
+                android:singleLine="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/form_input_bg"
+                android:gravity="center_vertical"
+                android:hint="Designation"
+                android:inputType="text"
+                android:padding="14dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/medium_grey"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/company_name"
+                android:singleLine="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/form_input_bg"
+                android:gravity="center_vertical"
+                android:hint="Company"
+                android:inputType="text"
+                android:padding="14dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/medium_grey"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ipa_tdr_no"
+                android:singleLine="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/form_input_bg"
+                android:gravity="center_vertical"
+                android:hint="IPA/TDR No"
+                android:inputType="text"
+                android:padding="14dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/medium_grey"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/passport_no"
+                android:singleLine="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/form_input_bg"
+                android:gravity="center_vertical"
+                android:hint="NID/ Passport No"
+                android:inputType="text"
+                android:padding="14dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/medium_grey"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:padding="5dp"
+                android:text="Bank Information:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/branch_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/country_arrays"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/form_input_bg"
+                    android:prompt="@string/country_prompt"
+                    android:layout_marginTop="10dp"
+                    android:padding="14dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/medium_grey"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_arrow_drop_down" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/tenure"
+                android:singleLine="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/form_input_bg"
+                android:gravity="center_vertical"
+                android:hint="TEnure/ Month"
+                android:inputType="number"
+                android:padding="14dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/medium_grey"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/rm_code"
+                android:singleLine="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/form_input_bg"
+                android:gravity="center_vertical"
+                android:hint="RM Code"
+                android:inputType="text"
+                android:padding="14dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/medium_grey"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/pmo_code"
+                android:singleLine="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/form_input_bg"
+                android:gravity="center_vertical"
+                android:hint="PMO Code"
+                android:inputType="text"
+                android:padding="14dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/medium_grey"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/applied_amount"
+                android:singleLine="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/form_input_bg"
+                android:gravity="center_vertical"
+                android:hint="Applied Amount"
+                android:inputType="numberDecimal"
+                android:padding="14dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/medium_grey"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/remark"
+                android:singleLine="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/form_input_bg"
+                android:gravity="top"
+                android:hint="Remarks"
+                android:inputType="textLongMessage"
+                android:paddingLeft="14dp"
+                android:paddingStart="14dp"
+                android:paddingRight="14dp"
+                android:paddingEnd="14dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="60dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/medium_grey"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/submit_loan__btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@color/colorPrimary"
+                android:padding="3dp"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
